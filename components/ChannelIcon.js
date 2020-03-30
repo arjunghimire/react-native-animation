@@ -41,6 +41,7 @@ export default ({name, radius, isActive, index, currentIndex}) => {
     ]),
     [],
   );
+
   const backgroundColor = bInterpolateColor(
     value,
     nonActiveColor,

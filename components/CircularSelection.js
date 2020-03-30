@@ -2,20 +2,26 @@ import * as React from 'react';
 import {Dimensions, View, StyleSheet} from 'react-native';
 import Animated from 'react-native-reanimated';
 import {transformOrigin} from 'react-native-redash';
-import LinearGradient from 'react-native-linear-gradient';
 
 import ChannelIcon from './ChannelIcon';
 import PanGesture from './PanGesture';
 
 const {interpolate} = Animated;
 const {width} = Dimensions.get('window');
-const height = width / 1.4;
+const height = width / 1.8;
 const D = width * 1.2;
-const innerR = D / 2;
+const innerR = D / 3.5;
 const styles = StyleSheet.create({
   container: {
     width,
     height,
+    marginTop: 1.5 * height,
+    marginLeft: width / 3,
+    transform: [
+      {
+        rotate: '-90deg',
+      },
+    ],
   },
 });
 
@@ -32,16 +38,6 @@ export default ({channels, index, isActive}) => {
   });
   return (
     <View style={styles.container}>
-      <LinearGradient
-        style={{
-          ...StyleSheet.absoluteFillObject,
-          borderRadius: R,
-          width: R * 2,
-          height: R * 2,
-          left: -(R - width / 2),
-        }}
-        colors={['#353637', '#161819', '#161819']}
-      />
       <Animated.View
         style={{
           ...StyleSheet.absoluteFillObject,

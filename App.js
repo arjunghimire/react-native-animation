@@ -94,41 +94,6 @@ const channels = [
     type: 'Crime Drama',
     cover: require('./assets/covers/luther.jpg'),
   },
-  {
-    id: 'line-of-duty',
-    title: 'Line of Duty',
-    subtitle: 'Crime needs an inside man',
-    type: 'Crime Drama',
-    cover: require('./assets/covers/line-of-duty.jpg'),
-  },
-  {
-    id: 'fleabag',
-    title: 'Fleabag',
-    subtitle: "She's smutty, angry, and talking to you",
-    type: 'Comedy',
-    cover: require('./assets/covers/fleabag.jpg'),
-  },
-  {
-    id: 'death-in-paradise',
-    title: 'Death in Paradise',
-    subtitle: 'DI Mooney takes on his first case in Saint Marie',
-    type: 'Crime Drama',
-    cover: require('./assets/covers/death-in-paradise.jpg'),
-  },
-  {
-    id: 'worldcup',
-    title: "FIFA Women's World Cup",
-    subtitle: '2019 Highlights: day 18',
-    type: 'Sport',
-    cover: require('./assets/covers/worldcup.jpg'),
-  },
-  {
-    id: 'legends',
-    title: 'Legends',
-    subtitle: 'Serena Williams',
-    type: 'Sport',
-    cover: require('./assets/covers/legends.jpg'),
-  },
 ];
 
 const App = () => <Channels {...{channels}} />;
